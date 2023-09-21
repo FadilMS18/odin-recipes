@@ -1,0 +1,156 @@
+*{
+    
+    margin:0;
+    font-family:arial;
+}
+
+body{
+    background-color:bisque;
+}
+
+.previous-page{
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:red;
+    padding:10px 20px 10px 20px;
+    border:none;
+    border-top-right-radius:100px;
+    border-bottom-right-radius:100px;
+    color:white;
+    cursor:pointer;
+    font-size:20px;
+    transition:0.2s;
+}
+
+.tooltip-previous-page{
+    text-align:center;
+    width:160px;
+    position:absolute;
+    bottom:-30px;
+    left:0;
+    font-size:15px;
+    background-color:rgb(96,96,96);
+    padding:2px;
+    border:none;
+    border-radius:3px;
+    opacity:0;
+    transition:0.2s;
+    pointer-events: none;
+}
+
+.previous-page:hover{
+    padding:15px 25px 15px 25px;
+    font-size:25px;
+}
+
+.previous-page:hover .tooltip-previous-page,
+.go-to-next-page:hover .tooltip-previous-page{
+    opacity:1;
+}
+
+.go-to-next-page{
+    position:fixed;
+    right:0;
+    top:0;
+    background-color:red;
+    color:white;
+    font-size:20px;
+    padding:10px 20px 10px 20px;
+    border:none;
+    border-top-left-radius:100px;
+    border-bottom-left-radius:100px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.go-to-next-page:hover{
+    padding:15px 25px 15px 25px;
+    font-size:25px;
+}
+
+.go-to-next-page > .tooltip-previous-page{
+    left:-93px;
+    
+}
+
+
+.back-to-home{
+    position: fixed;
+    top:100px;
+    background-color:red;
+    color:white;
+    font-size:20px;
+    padding:10px 20px 10px 20px;
+    border:none;
+    border-top-right-radius:100px;
+    border-bottom-right-radius:100px;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.back-to-home:hover{
+    padding:15px 25px 15px 25px;
+    font-size:25px;
+}
+
+.back-to-home-tooltip{
+    position:absolute;
+    bottom:-30px;
+    left:5px;;
+    width:170px;
+    font-size:15px;
+    background-color:rgb(96,96,96);
+    padding:3px;
+    border:none;
+    border-radius:3px;
+    pointer-events: none;
+    text-align:center;
+    opacity:0;
+    transition:0.2s
+}
+
+.back-to-home:hover .back-to-home-tooltip{
+    opacity:1;
+}
+
+ul{
+    list-style-type: decimal;
+    margin-top:10px;
+}
+
+li{
+    margin-top:4px;
+}
+
+.abc{
+    list-style-type: disc;
+    margin-left:20px;
+}
+
+.container-recipes{
+    margin:50px 300px 50px 300px;
+    background-color:rgb(219, 196, 169);
+    padding:30px;
+    min-width:500px;
+}
+
+.container-heading{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:50px;
+}
+
+.images{
+    height:200px;
+    margin-top:30px;
+}
+
+.food-description{
+    margin-bottom:20px;
+}
+
+.ingredients-description{
+    margin-bottom:30px;
+}
